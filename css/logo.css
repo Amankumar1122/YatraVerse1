@@ -1,0 +1,44 @@
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+    margin: 0;
+}
+
+/* Logo styling scoped to #logo only to avoid affecting other images */
+#logo{
+    margin-top: 0;
+    vertical-align: middle;
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+
+#logo:hover{
+    transform: scale(1.05);
+}
+
+/* Ensure logo is vertically centered inside its link container */
+.tm-site-name{
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* Responsive adjustments for the logo */
+@media(max-width: 991px){
+    #logo{
+        margin-left: 0;
+        margin-bottom: 0;
+        height: 50px;
+        width: auto;
+        transform: none;
+    }
+}
+
+@media(max-width: 767px){
+    #logo{
+        margin-left: 0;
+    }
+}
